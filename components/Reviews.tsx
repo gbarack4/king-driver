@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useRef, useState, type CSSProperties } from "react";
+
 const reviews = [
   {
     initials: "AM",
@@ -88,6 +92,32 @@ function ReviewCard({
 }
 
 export function Reviews() {
+  const groupRef = useRef<HTMLDivElement>(null);
+  const [shift, setShift] = useState(0);
+
+  useEffect(() => {
+    const group = groupRef.current;
+    if (!group) {
+      return;
+    }
+
+    const update = () => {
+      setShift(group.getBoundingClientRect().width);
+    };
+
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(group);
+    window.addEventListener("resize", update);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", update);
+    };
+  }, []);
+
+  const duration = Math.max(shift / 36, 20);
+
   return (
     <section className="reviews section" id="reviews">
       <div className="section-head">
@@ -104,8 +134,16 @@ export function Reviews() {
         </div>
       </div>
       <div className="review-marquee">
-        <div className="review-track">
-          <div className="review-group">
+        <div
+          className={`review-track${shift ? " is-ready" : ""}`}
+          style={
+            {
+              "--review-shift": `${shift}px`,
+              "--review-duration": `${duration}s`,
+            } as CSSProperties
+          }
+        >
+          <div className="review-group" ref={groupRef}>
             {reviews.map((review) => (
               <ReviewCard key={review.name} review={review} />
             ))}
