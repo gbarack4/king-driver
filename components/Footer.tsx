@@ -22,7 +22,7 @@ export function Footer() {
         </div>
         <div>
           <h4>Support</h4>
-          <a href="#">Contact us</a>
+          <a href="/contact">Contact us</a>
           <a href="#">Terms & conditions</a>
           <a href="#">Privacy policy</a>
         </div>
