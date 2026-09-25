@@ -5,7 +5,7 @@ export function Footer() {
     <footer>
       <div className="footer-grid">
         <div>
-          <Brand light />
+          <Brand />
           <p>
             Drivecab helps learner drivers across Australia find local, qualified
             instructors they can trust. Compare real reviews, cars, prices and live

@@ -20,6 +20,48 @@ const reviews = [
     quote:
       "Great value and a very professional instructor. We practised the local test routes and I passed with confidence.",
   },
+  {
+    initials: "HN",
+    name: "Hannah N.",
+    note: "Melbourne learner",
+    quote:
+      "I compared a few instructors, picked one that suited my schedule, and booked the same afternoon. Super simple.",
+  },
+  {
+    initials: "DT",
+    name: "Daniel T.",
+    note: "Automatic lessons",
+    quote:
+      "Clear pricing before I booked and no phone calls. My instructor was friendly and easy to learn with.",
+  },
+  {
+    initials: "RP",
+    name: "Riley P.",
+    note: "Sydney learner",
+    quote:
+      "Changing a lesson time took a minute in my account. That flexibility made it so much easier around work.",
+  },
+  {
+    initials: "EC",
+    name: "Emily C.",
+    note: "Passed first time",
+    quote:
+      "We focused on the local test routes and parking. I felt ready on the day and passed on my first attempt.",
+  },
+  {
+    initials: "MW",
+    name: "Marcus W.",
+    note: "Perth learner",
+    quote:
+      "Found a trusted instructor nearby with great reviews. Lessons started on time and I improved quickly.",
+  },
+  {
+    initials: "AL",
+    name: "Aisha L.",
+    note: "Manual lessons",
+    quote:
+      "I wanted a manual instructor and could filter that straight away. Booking was quick and the car was clean.",
+  },
 ];
 
 function ReviewCard({

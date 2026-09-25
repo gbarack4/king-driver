@@ -23,6 +23,31 @@ const questions = [
     answer:
       "Yes. Use the transmission filter to find instructors offering automatic or manual lessons near you.",
   },
+  {
+    title: "How do I book a driving lesson?",
+    answer:
+      "Enter your pick-up location, compare instructors, pick a time that suits you and confirm online. No phone calls needed.",
+  },
+  {
+    title: "What areas do you cover?",
+    answer:
+      "Drivecab instructors are available across Australia’s capital cities and many surrounding suburbs. Search your address to see who is nearby.",
+  },
+  {
+    title: "Can I change instructors later?",
+    answer:
+      "Yes. You can switch to another instructor at any time if you want a different teaching style, car or schedule.",
+  },
+  {
+    title: "How long is a driving lesson?",
+    answer:
+      "Most lessons are around one hour, though some instructors also offer longer sessions. Lesson length is shown before you book.",
+  },
+  {
+    title: "Do I need my own car?",
+    answer:
+      "No. You learn in your instructor’s dual-control car, so you do not need to provide a vehicle for lessons.",
+  },
 ];
 
 export function Faq() {
