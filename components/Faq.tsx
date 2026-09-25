@@ -36,23 +36,38 @@ export function Faq() {
         <p>Can’t find your answer? Our friendly support team is ready to help.</p>
       </div>
       <div className="accordion">
-        {questions.map((question, index) => (
-          <details
-            key={question.title}
-            open={openIndex === index}
-            onToggle={(event) => {
-              if (event.currentTarget.open) {
-                setOpenIndex(index);
-              }
-            }}
-          >
-            <summary>
-              {question.title}
-              <span>+</span>
-            </summary>
-            <p>{question.answer}</p>
-          </details>
-        ))}
+        {questions.map((question, index) => {
+          const isOpen = openIndex === index;
+
+          return (
+            <div
+              key={question.title}
+              className={`accordion-item${isOpen ? " is-open" : ""}`}
+            >
+              <button
+                type="button"
+                className="accordion-trigger"
+                aria-expanded={isOpen}
+                aria-controls={`faq-panel-${index}`}
+                id={`faq-trigger-${index}`}
+                onClick={() => setOpenIndex(isOpen ? -1 : index)}
+              >
+                {question.title}
+                <span aria-hidden="true">+</span>
+              </button>
+              <div
+                className="accordion-panel"
+                id={`faq-panel-${index}`}
+                role="region"
+                aria-labelledby={`faq-trigger-${index}`}
+              >
+                <div className="accordion-panel-inner">
+                  <p>{question.answer}</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

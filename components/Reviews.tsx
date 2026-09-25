@@ -22,9 +22,30 @@ const reviews = [
   },
 ];
 
-export function Reviews() {
-  const loop = [...reviews, ...reviews];
+function ReviewCard({
+  review,
+}: {
+  review: (typeof reviews)[number];
+}) {
+  return (
+    <blockquote>
+      <span className="quote-mark" aria-hidden="true">
+        “
+      </span>
+      <div className="stars">★★★★★</div>
+      <p>{review.quote}</p>
+      <footer>
+        <span>{review.initials}</span>
+        <div>
+          <strong>{review.name}</strong>
+          <small>{review.note}</small>
+        </div>
+      </footer>
+    </blockquote>
+  );
+}
 
+export function Reviews() {
   return (
     <section className="reviews section" id="reviews">
       <div className="section-head">
@@ -42,22 +63,16 @@ export function Reviews() {
       </div>
       <div className="review-marquee">
         <div className="review-track">
-          {loop.map((review, index) => (
-            <blockquote key={`${review.name}-${index}`}>
-              <span className="quote-mark" aria-hidden="true">
-                “
-              </span>
-              <div className="stars">★★★★★</div>
-              <p>{review.quote}</p>
-              <footer>
-                <span>{review.initials}</span>
-                <div>
-                  <strong>{review.name}</strong>
-                  <small>{review.note}</small>
-                </div>
-              </footer>
-            </blockquote>
-          ))}
+          <div className="review-group">
+            {reviews.map((review) => (
+              <ReviewCard key={review.name} review={review} />
+            ))}
+          </div>
+          <div className="review-group" aria-hidden="true">
+            {reviews.map((review) => (
+              <ReviewCard key={`${review.name}-copy`} review={review} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

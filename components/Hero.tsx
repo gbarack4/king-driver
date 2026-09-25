@@ -38,7 +38,13 @@ export function Hero() {
               <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
               <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
             </svg>
-            <span className="stars">★★★★★</span>
+            <span className="stars hero-stars" aria-label="5 stars">
+              {Array.from({ length: 5 }, (_, index) => (
+                <svg key={index} viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3.6 14.2 10h6.8l-5.5 4 2.1 6.4L12 16.6 6.4 20.4 8.5 14 3 10h6.8z" />
+                </svg>
+              ))}
+            </span>
             <strong>4.9</strong>
             <span>from 2,400+ learner reviews</span>
           </div>
