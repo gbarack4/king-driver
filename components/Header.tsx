@@ -12,7 +12,7 @@ export function Header() {
         <a href="/#faq">FAQs</a>
       </nav>
       <div className="nav-actions">
-        <a className="text-btn" href="/sign-in">
+        <a className="text-btn" href="https://drivecab.driveinstructor.pro/login">
           Sign in
         </a>
         <a className="primary small" href="/book">
@@ -20,7 +20,7 @@ export function Header() {
         </a>
       </div>
       <div className="topbar-end">
-        <a className="signin" href="/sign-in">
+        <a className="signin" href="https://drivecab.driveinstructor.pro/login">
           Sign in
         </a>
       </div>
