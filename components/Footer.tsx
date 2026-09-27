@@ -17,8 +17,8 @@ export function Footer() {
         <div>
           <h4>Learn to drive</h4>
           <a href="/book">Find instructors</a>
-          <a href="/#lessons">Driving lessons</a>
-          <a href="#">Test packages</a>
+          <a href="/driving-lessons">Driving lessons</a>
+          <a href="/driving-lessons/test-brisbane">Test packages</a>
         </div>
         <div>
           <h4>Support</h4>

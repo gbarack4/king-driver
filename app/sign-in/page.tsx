@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sign in | Drivecab Driving School",
+  title: "Sign in",
   description: "Sign in to your Drivecab learner account to manage lessons.",
 };
 

@@ -1,3 +1,4 @@
+import { Blog } from "@/components/Blog";
 import { Faq } from "@/components/Faq";
 import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
@@ -11,6 +12,7 @@ export default function HomePage() {
       <HowItWorks />
       <WhyDrivecab />
       <Reviews />
+      <Blog />
       <Faq />
     </main>
   );

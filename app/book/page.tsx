@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Search instructors | Drivecab Driving School",
+  title: "Search instructors",
   description:
     "Compare trusted local driving instructors and book a lesson online with Drivecab.",
 };

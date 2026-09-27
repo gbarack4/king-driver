@@ -1,4 +1,5 @@
 import { BookingForm } from "./BookingForm";
+import { HeroBookingFlow } from "./HeroBookingFlow";
 import { RotatingWord } from "./RotatingWord";
 
 export function Hero() {
@@ -50,6 +51,7 @@ export function Hero() {
           </div>
           <BookingForm />
         </div>
+        <HeroBookingFlow />
       </div>
     </section>
   );

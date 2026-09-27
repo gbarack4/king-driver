@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact us | Drivecab Driving School",
+  title: "Contact us",
   description:
     "Get in touch with Drivecab for help with bookings, instructors or your learner account.",
 };

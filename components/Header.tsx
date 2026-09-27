@@ -5,7 +5,7 @@ export function Header() {
     <header className="topbar">
       <Brand priority />
       <nav id="nav">
-        <a href="/#lessons">Driving lessons</a>
+        <a href="/driving-lessons">Driving lessons</a>
         <a href="/book">Instructors</a>
         <a href="/#how">How it works</a>
         <a href="/#reviews">Reviews</a>

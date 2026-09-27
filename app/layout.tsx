@@ -17,9 +17,20 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Drivecab Driving School | Find Your Driving Instructor",
+  metadataBase: new URL("https://drivecab.com.au"),
+  title: {
+    default: "Driving Schools Near Me | Drivecab Driving School",
+    template: "%s | Drivecab",
+  },
   description:
-    "Compare trusted local driving instructors, see live availability and book driving lessons online with Drivecab Driving School.",
+    "Find driving schools near me and driving schools Brisbane. Compare local instructors, prices and live times, then book a lesson online with Drivecab.",
+  keywords: [
+    "driving schools near me",
+    "driving schools brisbane",
+    "driving school brisbane",
+    "driving schools nearby",
+    "driving schools near me prices",
+  ],
   icons: {
     icon: {
       url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%233c0fa8'/%3E%3Cpath d='M12 39h40l-5-15H19z' fill='white'/%3E%3Ccircle cx='21' cy='43' r='5' fill='%23ffdd00'/%3E%3Ccircle cx='43' cy='43' r='5' fill='%23ffdd00'/%3E%3C/svg%3E",
