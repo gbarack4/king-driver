@@ -5,18 +5,14 @@ export function Header() {
     <header className="topbar">
       <Brand priority />
       <nav id="nav">
-        <a href="/driving-lessons">Driving lessons</a>
         <a href="/book">Instructors</a>
         <a href="/#how">How it works</a>
         <a href="/#reviews">Reviews</a>
         <a href="/#faq">FAQs</a>
       </nav>
       <div className="nav-actions">
-        <a className="text-btn" href="https://drivecab.driveinstructor.pro/login">
+        <a className="signin" href="https://drivecab.driveinstructor.pro/login">
           Sign in
-        </a>
-        <a className="primary small" href="/book">
-          Book online
         </a>
       </div>
       <div className="topbar-end">
