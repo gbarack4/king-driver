@@ -22,7 +22,10 @@ export function Hero() {
               ]}
             />
           </span>
-          <h1>Find a driving instructor who’s right for you.</h1>
+          <h1>
+            Find a driving instructor who’s right for you
+            <span className="hero-h1-extra">, then book a lesson online</span>.
+          </h1>
           <p>
             Compare trusted local instructors, real reviews and live availability.
             Book your next lesson online in minutes.

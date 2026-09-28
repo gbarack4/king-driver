@@ -33,6 +33,26 @@ const stats = [
       </svg>
     ),
   },
+  {
+    label: "Clear prices before you book",
+    laptopOnly: true,
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+        <circle cx="12" cy="9.5" r="5" />
+        <path d="M9.2 13.8 8 20l4-2.2L16 20l-1.2-6.2" />
+      </svg>
+    ),
+  },
+  {
+    label: "Easy to change your lesson time",
+    laptopOnly: true,
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+        <rect x="4.5" y="5.5" width="15" height="14" rx="2" />
+        <path d="M8 4v3M16 4v3M4.5 10h15M10 15.2l1.5 1.5 3.2-3.2" />
+      </svg>
+    ),
+  },
 ];
 
 export function HowItWorks() {
@@ -43,7 +63,10 @@ export function HowItWorks() {
         <h2>The simple way to book driving lessons across Australia.</h2>
         <div className="how-stats">
           {stats.map((stat) => (
-            <article key={stat.label}>
+            <article
+              key={stat.label}
+              className={stat.laptopOnly ? "how-stat-laptop" : undefined}
+            >
               {stat.icon}
               <p>{stat.label}</p>
             </article>
