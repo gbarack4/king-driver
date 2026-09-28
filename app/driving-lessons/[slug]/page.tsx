@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LessonLanding } from "@/components/LessonLanding";
 import { getLessonPage, lessonPages } from "@/lib/lesson-pages";
+import { SITE_URL } from "@/lib/site";
 
 type LessonSlugPageProps = {
   params: Promise<{ slug: string }>;
@@ -26,7 +27,7 @@ export async function generateMetadata({
     description: page.description,
     keywords: [page.keyword],
     alternates: {
-      canonical: `https://drivecab.com.au/driving-lessons/${page.slug}`,
+      canonical: `${SITE_URL}/driving-lessons/${page.slug}`,
     },
     openGraph: {
       title: page.title,

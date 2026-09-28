@@ -1,4 +1,5 @@
 import { BOOK_URL, lessonPages, type LessonPage } from "@/lib/lesson-pages";
+import { SITE_URL } from "@/lib/site";
 
 export function LessonLanding({ page }: { page: LessonPage }) {
   return (
@@ -15,9 +16,9 @@ export function LessonLanding({ page }: { page: LessonPage }) {
             provider: {
               "@type": "Organization",
               name: "Drivecab Driving School",
-              url: "https://drivecab.com.au",
+              url: SITE_URL,
             },
-            url: `https://drivecab.com.au/driving-lessons/${page.slug}`,
+            url: `${SITE_URL}/driving-lessons/${page.slug}`,
           }),
         }}
       />

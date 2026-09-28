@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { BOOK_URL, lessonPages } from "@/lib/lesson-pages";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     "driving instructor near me",
     "driving school brisbane",
   ],
-  alternates: { canonical: "https://drivecab.com.au/driving-lessons" },
+  alternates: { canonical: `${SITE_URL}/driving-lessons` },
   openGraph: {
     title: "Driving Lessons | Book an Instructor Near You | Drivecab",
     description:
