@@ -8,7 +8,7 @@ export const lessonPages = [
     description:
       "Book driving lessons in Brisbane with local instructors. Compare automatic and manual cars, prices and live times, then book online in minutes.",
     h1: "Driving lessons in Brisbane",
-    lead: "Compare trusted Brisbane instructors, cars and live availability. Book a lesson online in minutes — no phone calls.",
+    lead: "Compare trusted Brisbane instructors, cars and live availability. Book a lesson online in minutes. No phone calls.",
     sections: [
       {
         heading: "Find driving lessons in Brisbane that fit you",
@@ -30,7 +30,7 @@ export const lessonPages = [
     keyword: "book driving lessons brisbane",
     title: "Book Driving Lessons Brisbane | Instant Times | Drivecab",
     description:
-      "Book driving lessons Brisbane learners can confirm online. Pick a local instructor, choose a live time and pay when you book — no waiting on a callback.",
+      "Book driving lessons Brisbane learners can confirm online. Pick a local instructor, choose a live time and pay when you book, with no waiting on a callback.",
     h1: "Book driving lessons Brisbane",
     lead: "Search your suburb, pick an instructor and confirm a time. Booking driving lessons in Brisbane takes a few minutes.",
     sections: [
@@ -128,7 +128,7 @@ export const lessonPages = [
     description:
       "Find a driving instructor near me with ratings, cars and available times. Compare nearby teachers and book a lesson online.",
     h1: "Driving instructor near me",
-    lead: "See instructors close to your suburb, compare reviews and book the teacher you want — no phone calls.",
+    lead: "See instructors close to your suburb, compare reviews and book the teacher you want. No phone calls.",
     sections: [
       {
         heading: "A nearby instructor makes lessons easier",

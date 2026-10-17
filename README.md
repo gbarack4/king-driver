@@ -13,6 +13,6 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Scripts
 
-- `npm run dev` — start the development server
-- `npm run build` — create a production build
-- `npm start` — serve the production build
+- `npm run dev` - start the development server
+- `npm run build` - create a production build
+- `npm start` - serve the production build

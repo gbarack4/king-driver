@@ -32,7 +32,7 @@ export default function DrivingLessonsHubPage() {
         <h1>Driving lessons near you, booked online</h1>
         <p className="lead">
           Compare local instructors, cars and live times. Book driving lessons
-          in Brisbane or nearby — no phone calls.
+          in Brisbane or nearby. No phone calls.
         </p>
         <a className="primary lesson-book" href={BOOK_URL}>
           Book now <span className="booking-arrow">→</span>

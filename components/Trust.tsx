@@ -32,7 +32,7 @@ const points = [
   },
   {
     title: "Your instructor, your call",
-    copy: "Not the right fit? Switch instructors online and keep your lessons moving — no phone calls.",
+    copy: "Not the right fit? Switch instructors online and keep your lessons moving, with no phone calls.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
         <circle cx="12" cy="8" r="3.1" />

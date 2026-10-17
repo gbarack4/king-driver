@@ -18,13 +18,13 @@ export function Footer() {
           <h4>Learn to drive</h4>
           <a href="/book">Find instructors</a>
           <a href="/driving-lessons">Driving lessons</a>
-          <a href="/driving-lessons/test-brisbane">Test packages</a>
+          <a href="/driving-lessons/driving-test-lessons-brisbane">Test packages</a>
         </div>
         <div>
           <h4>Support</h4>
           <a href="/contact">Contact us</a>
-          <a href="#">Terms & conditions</a>
-          <a href="#">Privacy policy</a>
+          <a href="/terms">Terms & conditions</a>
+          <a href="/privacy">Privacy policy</a>
         </div>
       </div>
       <div className="copyright">
