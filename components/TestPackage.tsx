@@ -46,7 +46,19 @@ export function TestPackage() {
           <ul>
             {included.map((item) => (
               <li key={item}>
-                <span aria-hidden="true">✓</span>
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="#fff3b0" />
+                    <path
+                      d="M7.2 12.3 10.4 15.5 16.8 8.6"
+                      fill="none"
+                      stroke="#171523"
+                      strokeWidth="2.4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
                 {item}
               </li>
             ))}
